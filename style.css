@@ -1,0 +1,33 @@
+p {
+    font-size: 2rem;
+    color: blueviolet;
+}
+
+
+button {
+    width: 200px;
+    padding: 0.5rem 2rem;
+    margin-bottom: 10px;
+}
+
+.flex {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#title {
+    font-size: 4rem;
+    color: brown;
+}
+
+.people_img {
+    padding: 2rem;
+    max-width: 300px;
+}
+
+.panel {
+    height: 100%;
+    display: none;
+}
