@@ -50,4 +50,17 @@ $(document).ready(() => {
             }
         );
     });
+
+    //chaining methods
+    $(".people_img").click(() => {
+        $(".people_img")
+            .animate({
+                left: "500px",
+            }, 1000)
+            .slideUp(500)
+            .slideDown(500)
+            .animate({
+                left: "0px",
+            }, 1000);
+    });
 });

@@ -61,15 +61,12 @@ a {
     right: 2rem;
     width: 50px;
     width: 50px;
-    transition: all .4s ease-in-out;
+    transition: all 0.4s ease-in-out;
 }
 
 .toggle:hover {
-    
     scale: 1.2;
 }
-
-
 
 .panel {
     width: 100%;
