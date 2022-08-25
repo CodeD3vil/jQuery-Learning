@@ -1,9 +1,5 @@
 $(document).ready(() => {
-    //hides of of the text elements
-    $("p").click(() => {
-        $(".text1").hide();
-    });
-
+    
     //hides the title on click
     $(".hideBtn").click(() => {
         $("#title").hide(500);
@@ -31,7 +27,7 @@ $(document).ready(() => {
 
     //slide animate the panel at the top of the page
     $(".toggle").click(() => {
-        $(".panel").slideToggle(400);
+        $(".panel").slideToggle(1000);
     });
 
     //animate the image and then showa message after it's finished
@@ -54,13 +50,19 @@ $(document).ready(() => {
     //chaining methods
     $(".people_img").click(() => {
         $(".people_img")
-            .animate({
-                left: "500px",
-            }, 1000)
+            .animate(
+                {
+                    left: "500px",
+                },
+                1000
+            )
             .slideUp(500)
             .slideDown(500)
-            .animate({
-                left: "0px",
-            }, 1000);
+            .animate(
+                {
+                    left: "0px",
+                },
+                1000
+            );
     });
 });

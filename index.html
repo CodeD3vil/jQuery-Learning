@@ -7,8 +7,8 @@
         <script src="script.js"></script>
         <link rel="stylesheet" href="style.css" />
     </head>
-    <div class="flex">
-        <body>
+    <body>
+        <nav class="header">
             <div class="toggle">
                 <img src="/rocket.svg" alt="" />
             </div>
@@ -19,15 +19,22 @@
                     <a class="text3 link">Pricing</a>
                 </div>
             </div>
+        </nav>
+        <div class="titles">
             <div class="page-titles">
-                <h1 class="" id="title">This is a title</h1>
-                <h2 class="" id="subtitle">This is a subtitle</h2>
+                <h1 class="" id="title">Hide me</h1>
             </div>
-            <button class="hideBtn">Hide Title</button>
-            <button class="showBtn">Show Title</button>
-            <img src="people.png" class="people_img" alt="" />
-            <button class="fadeBtn">Fade Image</button>
-            <button class="animateImage">Animate Image</button>
-        </body>
-    </div>
+            <div class="title-buttons">
+                <button class="hideBtn">Hide Title</button>
+                <button class="showBtn">Show Title</button>
+            </div>
+        </div>
+        <div class="image-area">
+            <div class="image"><img src="people.png" class="people_img" alt="" /></div>
+            <div class="image-buttons">
+                <button class="fadeBtn">Fade Image</button>
+                <button class="animateImage">Animate Image</button>
+            </div>
+        </div>
+    </body>
 </html>
