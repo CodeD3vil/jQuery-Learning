@@ -2,24 +2,39 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <title>Demo</title>
+        <title>jQuery Learning</title>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script src="script.js"></script>
         <link rel="stylesheet" href="style.css" />
     </head>
-    <div class="flex">
-        <body>
-            <button class="show-panel">Show Panel</button>
-            <div class="panel">
-                <p class="text1">Text 1</p>
-                <p class="text2">Text 2</p>
-                <p class="text3">Text 3</p>
+    <body>
+        <nav class="header">
+            <div class="toggle">
+                <img src="/rocket.svg" alt="" />
             </div>
-            <h1 class="" id="title">This is a title</h1>
-            <button class="hideBtn">Hide Title</button>
-            <button class="showBtn">Show Title</button>
-            <img src="people.png" class="people_img" alt="">
-            <button class="fadeBtn">Fade Image</button>
-        </body>
-    </div>
+            <div class="panel">
+                <div class="links">
+                    <a class="text1 link">Home</a>
+                    <a class="text2 link">About</a>
+                    <a class="text3 link">Pricing</a>
+                </div>
+            </div>
+        </nav>
+        <div class="titles">
+            <div class="page-titles">
+                <h1 class="" id="title">Hide me</h1>
+            </div>
+            <div class="title-buttons">
+                <button class="hideBtn">Hide Title</button>
+                <button class="showBtn">Show Title</button>
+            </div>
+        </div>
+        <div class="image-area">
+            <div class="image"><img src="people.png" class="people_img" alt="" /></div>
+            <div class="image-buttons">
+                <button class="fadeBtn">Fade Image</button>
+                <button class="animateImage">Animate Image</button>
+            </div>
+        </div>
+    </body>
 </html>
