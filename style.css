@@ -22,7 +22,7 @@ body {
 
 p {
     font-size: 2rem;
-    color: blueviolet;
+    color: rgb(35, 27, 42);
 }
 
 button {
@@ -93,7 +93,9 @@ a {
 }
 
 .titles,
-.image-area {
+.image-area,
+.get-area,
+.set-area, .add-area {
     width: 100%;
     height: 300px;
     display: grid;
@@ -109,6 +111,26 @@ a {
     height: 300px;
 }
 
+.get-area {
+    background-color: rgb(185, 185, 252);
+}
+
+.add-area {
+    padding: 5rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: cornsilk;
+    height: 100%;
+}
+
+.append-Btn {
+    place-self: center;
+}
+
+.append-text-area, .prepend-text-area {
+    margin-top: 1rem;
+    border-bottom: 1px solid black;
+}
+
 .image {
     margin: 0 auto;
 }
@@ -121,4 +143,12 @@ a {
     width: 250px;
     height: 250px;
     place-self: center;
+}
+
+.input {
+    padding: 0.3rem 0.3rem;
+}
+
+.set-buttons {
+    margin-top: 1rem;
 }
