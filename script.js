@@ -1,5 +1,4 @@
 $(document).ready(() => {
-    
     //hides the title on click
     $(".hideBtn").click(() => {
         $("#title").hide(500);
@@ -27,7 +26,7 @@ $(document).ready(() => {
 
     //slide animate the panel at the top of the page
     $(".toggle").click(() => {
-        $(".panel").slideToggle(1000);
+        $(".panel").slideToggle(700);
     });
 
     //animate the image and then showa message after it's finished
@@ -64,5 +63,56 @@ $(document).ready(() => {
                 },
                 1000
             );
+    });
+
+    //gets the text from an element
+    $(".get-textBtn").click(() => {
+        alert("Text: " + $(".getText").text());
+    });
+
+    //gets the HTML
+    $(".get-HTMLBtn").click(() => {
+        alert("HTML: " + $(".getText").html());
+    });
+
+    //get the input
+    $(".get-inputBtn").click(() => {
+        alert("Input value: " + $("#getInput").val());
+    });
+
+    //set text
+    $(".set-textBtn").click(() => {
+        $(".set-textBtn").text((i, text) => {
+            console.log(text);
+            return;
+        });
+    });
+
+    //set attribute
+    $(".set-attrBtn").click(() => {
+        $(".set-attrBtn").attr({
+            text: "https://www.youtube.com/",
+        });
+    });
+
+    //append text
+    let appendNumber = 0;
+    $(".append-Btn").click(() => {
+        appendNumber += 1;
+        const appendText = $("<p></p>").text("Appended text" + " " + appendNumber);
+        $(".append-text-area").append(appendText);
+    });
+
+    //prepend text
+    let prependNumber = 0;
+    $(".prepend-Btn").click(() => {
+        prependNumber += 1;
+        const prependText = $("<p></p>").text("Prepended text" + " " + prependNumber);
+        $(".append-text-area").prepend(prependText);
+    });
+
+    //remove the child elements of the selected element
+    $(".remove-append-Btn").click(() => {
+        $(".append-text-area").empty();
     });
 });
