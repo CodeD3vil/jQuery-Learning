@@ -95,7 +95,8 @@ a {
 .titles,
 .image-area,
 .get-area,
-.set-area, .add-area {
+.set-area,
+.add-area {
     width: 100%;
     height: 300px;
     display: grid;
@@ -117,7 +118,7 @@ a {
 
 .add-area {
     padding: 5rem;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     background-color: cornsilk;
     height: 100%;
 }
@@ -126,9 +127,37 @@ a {
     place-self: center;
 }
 
-.append-text-area, .prepend-text-area {
+.append-text-area {
     margin-top: 1rem;
-    border-bottom: 1px solid black;
+    text-align: center;
+}
+
+.add-left,
+.add-right {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.square {
+    text-align: center;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: blueviolet;
+    margin: 0 1rem 1rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    color: whitesmoke;
+    font-weight: 400;
+}
+
+.before-Btn {
+    margin-top: 1rem;
 }
 
 .image {

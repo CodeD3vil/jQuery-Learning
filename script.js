@@ -83,16 +83,20 @@ $(document).ready(() => {
     //set text
     $(".set-textBtn").click(() => {
         $(".set-textBtn").text((i, text) => {
-            console.log(text);
+            alert(text + " " + "at the position" + " " + i);
             return;
         });
     });
 
     //set attribute
+    const attribute = "https://www.youtube.com/";
     $(".set-attrBtn").click(() => {
-        $(".set-attrBtn").attr({
-            text: "https://www.youtube.com/",
-        });
+        $(".set-attrBtn").attr(
+            {
+                text: attribute,
+            },
+            alert("the button attribute is now" + ": " + attribute)
+        );
     });
 
     //append text
@@ -115,4 +119,14 @@ $(document).ready(() => {
     $(".remove-append-Btn").click(() => {
         $(".append-text-area").empty();
     });
+
+    //add something before an element
+    $(".before-Btn").click(() => {
+        $(".square").before("<b>Before</b>")
+    })
+
+    //add an element after another element
+    $(".after-Btn").click(() => {
+        $(".square").after("<i>After</i>")
+    })
 });
